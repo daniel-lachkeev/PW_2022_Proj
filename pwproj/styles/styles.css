@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(46, 46, 46);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Upvote/Downvote */
+
+.number {
+    display: inline-block;
+    text-align: center;
+}
+
+.vote {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.up-vote,
+.down-vote {
+    color: dimgray;
+    cursor: pointer;
+}
+
+.vote.vote-up .up-vote {
+    color: #48ff00;
+}
+
+.vote.vote-down .down-vote {
+    color: #ff0000;
+}
+
+
+/* Items */
+
+.column {
+    padding-top: 20px;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.flex {
+    margin: 0;
+    border-radius: 5px;
+    display: flex;
+    background-color: #fff;
+    margin-bottom: 2rem;
+}
+
+.flex div:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+img {
+    max-height: 20%;
+    max-width: 20%;
+}
+
+.flex div:last-child {
+    margin: 2rem;
+    flex: 2;
+}
+
+.flex h3 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    font-weight: 400;
+}
+
+.flex p {
+    font-size: 1rem;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.flex p:last-of-type {
+    margin-bottom: 0;
+}
+
+@media screen and (max-width: 714px) {
+    .flex {
+        border: 0;
+        margin: 0;
+        border-bottom: 2px solid #333;
+    }
+    .flex div:last-child {
+        margin: 1rem;
+    }
+    .column {
+        width: 100%;
+    }
+}

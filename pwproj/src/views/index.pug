@@ -1,0 +1,53 @@
+doctype html
+head
+  title= "Home"
+  style
+             include ../../styles/header.css
+             include  ../../styles/styles.css
+             include  ../../styles/footer.css
+
+  link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.6.3/css/all.css' integrity='sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/' crossorigin='anonymous')
+.topnav
+  a(href='#home') Home
+  a(href='#about') About
+  a(href='#contact') Contact
+  .search-container
+    form(action='/action_page.php')
+      input(type='text' placeholder='Type your favorite game..' name='search')
+      button(type='submit') Search
+.column
+  figure.flex
+    img(src='images/csgo.png', alt='Csgo')
+    .vote
+      span.up-vote
+        i.fas.fa-angle-up
+      span.number 0
+      span.down-vote
+        i.fas.fa-angle-down
+    div
+      h3 Aloe polyphylla Sch&ouml;nland ex Pillans
+      p
+        | Endangered native of the Maluti Mountains in Lesotho, Africa. Grows in rock crevices at high altitudes. Only alpine member of the genus Aloe. Threats to populations of spiral aloe include overgrazing, unsustainable harvesting by plant
+        | enthusiasts and people interested in its medicinal properties, and increasing rarity of its pollinator, the Malachite Sunbird.
+  figure.flex
+    img(src='images/Rocket_League.jpg', alt='RocketLeague')
+    .vote
+      span.up-vote
+        i.fas.fa-angle-up
+      span.number 0
+      span.down-vote
+        i.fas.fa-angle-down
+    div
+      h3 Ommatoiulus rutilans
+      p
+        | Its shape and color have earned it the name of Wireworm. It differs clearly from a worm by having a rigid body and protected by a hard layer of chitin and mineral salts. Easy to observe in humid places, among the leaf litter, wood.
+footer.fixed_footer
+  .content
+    p Lorem Ipsum
+    p Lorem Ipsum
+    p Lorem Ipsum
+    .newsletter-container
+      form(action='/action_page.php')
+        p Subscribe to our newsletter
+        input(type='text' placeholder='Email' name='search')
+        button(type='submit') Search
