@@ -1,14 +1,14 @@
 {
   "name": "pwproj",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "Projeto de PW 2021/2022",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start" : "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Daniel Lachkeev & Tomás Nini",
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.2",
@@ -18,5 +18,9 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daniel-lachkeev/PW_2022_Proj.git"
   }
 }
