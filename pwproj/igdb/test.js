@@ -22,8 +22,8 @@ function testToken(callback) {
     }};
 
     var data = `{
-        "client_id": "p4cox2cgmdgb3v8qmcsmd98omj6bqf",
-        "client_secret": "wonq8t5oigks6pc1oxmh53blzkd477",
+        "client_id": "",
+        "client_secret": "",
         "grant_type": "client_credentials"
     }`;
 
